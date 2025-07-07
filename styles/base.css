@@ -25,13 +25,57 @@ body {
     line-height: 1.6;
 }
 
-
+/* Header layout */
 header {
     background-color: var(--primary-color);
     color: white;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
+    border-bottom: 4px solid var(--accent-color);
 }
+
+/* Name and course title block */
+.header-content {
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+#course-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    display: block;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 #course-title {
     display: inline;
@@ -187,7 +231,7 @@ main {
 }
 
 
-*/ .resources a:hover {
+.resources a:hover {
     color: #0066cc;
 }
 
@@ -213,7 +257,33 @@ footer span {
 
 @media (max-width: 768px) {
     main {
+        grid-template-columns: 1fr;
+        display: flex;
         flex-direction: column;
+        padding: 1rem;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .about-top,
+    .place-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card.resources ul {
+        align-items: flex-start;
     }
 
     .content,
@@ -226,11 +296,5 @@ footer span {
         flex-direction: column;
         align-items: center;
     }
-}
 
-
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
 }
