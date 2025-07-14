@@ -1,0 +1,37 @@
+@media (min-width: 740px) {
+  header {
+    flex-direction: row;
+  }
+
+  #menu-toggle,
+  #menu-close {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    display: flex !important;
+    width: auto;
+    flex-direction: row;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav a {
+    padding: 0.75rem 1rem;
+    flex: 1;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
