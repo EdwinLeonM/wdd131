@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Country page - Edwin L. Matías</title>
+  <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. Edwin L. Matías. Web development fundamentals, personal background, location, and resources.">
+  <meta name="author" content="Edwin L. Matías">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+  <link rel="icon" href="data:,">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Loreto - Iquitos - Amazon River</h1>
+  </header>
+
+  <div class="hero-image"></div>
+
+  <main class="background-image">
+    <!-- desktop -->
+    <section class="info-box">
+      <div class="box-header">
+        <h2>Data</h2>
+      </div>
+      <ul>
+        <li><strong>Area:</strong> 3,191 sq km</li>
+        <li><strong>Population:</strong> 467,000</li>
+        <li><strong>Capital:</strong> Loreto -Iquitos</li>
+        <li><strong>Languages:</strong> Spanish, shipibo-conibo</li>
+        <li><strong>Currency:</strong> Sol peruano (PEN)</li>
+        <li><strong>Time Zone:</strong> UTC-5</li>
+        <li><strong>Calling Code:</strong> +51-65</li>
+        <li><strong>Internet TLD:</strong> .pe</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <div class="box-header">
+        <h2>Weather</h2>
+        <img src="images/316016_lightning_cloud_sun_icon.svg" alt="Weather Icon" />
+      </div>
+      <ul>
+        <li><strong>Temperature:</strong> 29°C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Wind:</strong> 6km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Mobile -->
+  <div class="info-box-container">
+    <section class="info-box">
+      <div class="box-header">
+        <h2>Data</h2>
+      </div>
+      <ul>
+        <li><strong>Area:</strong> 3,191 sq km</li>
+        <li><strong>Population:</strong> 467,000</li>
+        <li><strong>Capital:</strong> Loreto -Iquitos</li>
+        <li><strong>Languages:</strong> Spanish, shipibo-conibo</li>
+        <li><strong>Currency:</strong> Sol peruano (PEN)</li>
+        <li><strong>Time Zone:</strong> UTC-5</li>
+        <li><strong>Calling Code:</strong> +51-65</li>
+        <li><strong>Internet TLD:</strong> .pe</li>
+      </ul>
+    </section>
+
+    <section class="mobile-icon"></section>
+
+    <section class="info-box">
+      <div class="box-header">
+        <h2>Weather</h2>
+      </div>
+      <ul>
+        <li><strong>Temperature:</strong> 29°C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Wind:</strong> 6km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌍 Edwin L. Matías 🌍 Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
