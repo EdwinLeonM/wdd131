@@ -43,6 +43,11 @@ header h1 {
   border-bottom: 8px solid var(--primary-red);
 }
 
+.hero-image {
+  display: none;
+}
+
+
 .info-box {
   background-color: var(--box-bg);
   width: 300px;
