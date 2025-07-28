@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album - Edwin L. Matías</title>
+    <meta
+      name="description"
+      content="Picture Album. Edwin L. Matías. Web development fundamentals.">
+    <meta name="author" content="Edwin L. Matías" />
+    <link rel="stylesheet" href="styles/filtered.temples.css" />
+    <link rel="stylesheet" href="styles/filtered.temples-large.css" />
+    <script src="scripts/filtered.temples.js" defer></script>
+    <link rel="icon" href="data:," />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+      <nav id="nav-menu">
+        <button id="menu-close" aria-label="Close Menu">&times;</button>
+        <ul>
+          <li><a href="#" id="home" class="active">Home</a></li>
+          <li><a href="#" id="old">Old</a></li>
+          <li><a href="#" id="new">New</a></li>
+          <li><a href="#" id="large">Large</a></li>
+          <li><a href="#" id="small">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div class="res-grid"></div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> -Edwin L. Matías - Peru</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

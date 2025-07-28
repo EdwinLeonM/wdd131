@@ -1,0 +1,71 @@
+@media (min-width: 740px) {
+  header {
+    flex-direction: row;
+  }
+
+  #menu-toggle,
+  #menu-close {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    display: flex !important;
+    width: auto;
+    flex-direction: row;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav a {
+    padding: 0.75rem 1rem;
+    flex: 1;
+  }
+
+  .res-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .temple-card {
+    background: rgb(241, 238, 238);
+    text-align: center;      
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(47, 66, 151, 0.918);
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    gap: 0.5rem;              
+  }
+
+  .temple-card h3 {
+    font-size: 1.2rem;
+    color: #03145e;
+  }
+
+  .temple-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #0d0d0e;
+  }
+
+  .temple-card img {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.986);
+  transition: transform 0.3s ease;
+  }
+}
+
+
+
